@@ -1,7 +1,6 @@
 {
   "name": "alapi/xhpay",
   "description": "基于 xuhunpay 的 API 开发的 Composer Laravel Package",
-  "minimum-stability": "dev",
   "type": "library",
   "license": "proprietary",
   "authors": [
