@@ -1,0 +1,32 @@
+{
+  "name": "alapi/xhpay",
+  "description": "基于 xuhunpay 的 API 开发的 Composer Laravel Package",
+  "minimum-stability": "dev",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Alone88",
+      "email": "im@alone88.cn"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "alapi\\XhPay\\": "src/"
+    }
+  },
+  "extra":{
+    "laravel": {
+      "providers": [
+        "alapi\\XhPay\\XhPayServiceProvider"
+      ],
+      "aliases": {
+        "XhPay": "alapi\\XhPay\\Facades\\XhPay"
+      }
+    }
+  }
+}
