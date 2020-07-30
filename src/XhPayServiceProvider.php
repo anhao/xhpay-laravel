@@ -22,7 +22,7 @@ class XhPayServiceProvider extends ServiceProvider
     }
 
     public function register(){
-        $this->mergeConfigFrom(__DIR__.'/../config/xhpay.php', 'xhpay');
+        $this->mergeConfigFrom($this->configPath(), 'xhpay');
 
         // Register the service the package provides.
         $this->app->singleton('xhpay', function ($app) {
@@ -33,5 +33,8 @@ class XhPayServiceProvider extends ServiceProvider
     public function provides()
     {
         return ['xhpay'];
+    }
+    protected function configPath(){
+        return __DIR__.'../config/xhpay.php';
     }
 }
