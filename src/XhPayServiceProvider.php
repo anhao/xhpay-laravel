@@ -35,6 +35,6 @@ class XhPayServiceProvider extends ServiceProvider
         return ['xhpay'];
     }
     protected function configPath(){
-        return __DIR__.'../config/xhpay.php';
+        return __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'config'.DIRECTORY_SEPARATOR.'xhpay.php';
     }
 }
